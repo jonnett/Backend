@@ -1,0 +1,8 @@
+django
+
+
+// para crear proyecto, escribir comando: 
+django-admin startproject <nombre_del_proyecto>
+django-admin startapp <nombre_de_la_aplicacion>
+
+para ejecutar el proyecto, escribir comando: python manage.py runserver

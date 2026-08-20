@@ -10,4 +10,11 @@ def portfolio_home(request):
     return render(request, "home.html", context)
 
 def portfolio_servicios(request):
-    return render(request, "servicios.html")
+    context = {
+        'servicios' : [
+            { 'nombre': 'Desarrollo Web', 'descripcion': 'Desarrollo de sitios web modernos.'},
+            { 'nombre': 'Consultoria', 'descripcion': 'Se atienden consultas del tarot.'},
+            { 'nombre': 'Arquitectura', 'descripcion': 'Se diseñan arquitecturas robustas.'}
+        ]
+    }
+    return render(request, "servicios.html", context)
